@@ -45,22 +45,22 @@ for (let index = 0; index < myWord.length; index++) {
 
 function isThisWordPalindrome(myWord) {
     //Assegno il valore in entrata a una variabile interna
-    checkedWord = myWord;
+    const checkedWord = myWord;
     //Copio il codice scritto sopra (ora commentato)
-    for (let index = 0; index < myWord.length; index++) {
+    for (let index = 0; index < checkedWord.length; index++) {
         //Uno parte dall'inizio
-        const firstLetter = myWord[index];
+        const firstLetter = checkedWord[index];
         //Verifico la giusta selezione
         //console.log(firstLetter);
         //L'altro parte dalla fine e avanza in modo speculare
-        const lastLetter = myWord[myWord.length - (index + 1)]
+        const lastLetter = checkedWord[myWord.length - (index + 1)]
         //console.log(lastLetter);
         // Se sono diversi interrompo il ciclo se no il ciclo continua
         if (firstLetter !== lastLetter) {
             //console.log("La parola non è palindroma");
             //break;
             return false;
-        } else if (index === (myWord.length - 1)) {
+        } else {
             //Se completo il ciclo senza interruzioni significa che la parola è palindroma
             return true;
         }
@@ -87,7 +87,7 @@ console.log( isThisWordPalindrome(myWord));
 const userNumber = Number(prompt("SECONDO ESERCIZIO Inserisci un numero da 1 a 5"));
 console.log("hai inserito il numero", userNumber);
 const choice = Number(prompt("SECONDO ESERCIZIO Inserisci 0 se pensi il numero sia pari, 1 se dispari"))
-console.log("hai inserito", choice);
+console.log("Tra 0=Pari e 1=Dispari hai scelto", choice);
 
 
 //Devo fare due verifiche
