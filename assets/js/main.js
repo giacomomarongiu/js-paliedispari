@@ -52,13 +52,13 @@ function isThisWordPalindrome(myWord) {
             //console.log("La parola non è palindroma");
             //break;
             return false;
-        } else if ( index===(myWord.length-1)){
+        } else if (index === (myWord.length - 1)) {
             //Se completo il ciclo senza interruzioni significa che la parola è palindroma
             return true;
         }
         // Entrerò nell'else solo quando le mie variabili si saranno
         // invertite la posizione (essendo la parola palindroma)
-    } 
+    }
 }
 
 //Chiamo la funzione e faccio un test
@@ -66,7 +66,36 @@ function isThisWordPalindrome(myWord) {
 //isThisWordPalindrome("anna")
 
 //Faccio la stessa cosa ma con il promt
-const myWord = prompt("Inserisci una parola con lettere minuscole")
-console.log("Hai inserito", myWord);
+//const myWord = prompt("Inserisci una parola con lettere minuscole")
+//console.log("Hai inserito", myWord);
 //Visualizzo con valori booleani se la parola è palindroma
-console.log( isThisWordPalindrome(myWord));
+//console.log( isThisWordPalindrome(myWord));
+
+
+
+//Ex 2
+//PARI E DISPARI
+//Dichiaro due variabili
+const userNumber = Number(prompt("Inserisci un numero da 1 a 5"));
+const choice = Number(prompt("Inserisci 0 se pensi il numero sia pari, 1 se dispari"))
+console.log("hai inserito", choice);
+let randomNum= Number(Math.floor(Math.random() * 5));
+let sum = randomNum + userNumber;
+
+//Vedo la somma
+console.log("la somma è",sum); //ok2
+
+//Devo fare due verifiche
+//La prima è capire se il numero random è pari/dispari
+if (sum % 2 === 0) {
+    //test
+    console.log("Il numero è pari");
+} else {
+    console.log("E' dispari");
+}
+
+//La seconda è capire se la mia scelta è uguale all'esito del confronto precendente
+if ((sum % 2 === choice)) {
+    console.log("hai vinto");
+ } else { console.log("hai perso"); }
+

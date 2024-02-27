@@ -21,7 +21,12 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
  # Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
-Consigli del giorno
-Scriviamo sempre in italiano i passaggi che vogliamo fare
-Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
-Buon lavoro e buon divertimento! Confermate lettura come al solito :baby-yoda:
+
+
+
+## Steps
+- Dichiaro due variabili
+- Assegno loro un numero e una stringa (pari/dispari quindi % 0/1)
+- Sommo un alla variabile numerica un valore random da 1 a 5
+- Se la somma è uguale alla mia scelta in stringa ho vinto
+- Se no ho perso
