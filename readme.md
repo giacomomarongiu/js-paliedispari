@@ -8,8 +8,6 @@ Chiedere all’utente di inserire una parola Creare una funzione per capire se l
 -- Uno parte da fine stringa e uno dall'inizio
 -- Se sono uguali decremento il primo e aumento il secondo
 -- Confronto nuovamente e in caso incremento
--- Quando il secondo valore è più alto del secondo finisce il ciclio
-
 -- Guardo ciò che ho scritto e cerco di incorporare il codice in una funzione per essere riutilizzato
 
 ### Things
